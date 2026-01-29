@@ -32,3 +32,18 @@ GmsOne requires the following environment to run from source:
     python3 GmsOne.py
     ```
 
+## Building the App (.app)
+
+If you want to package GmsOne as a standalone macOS application using [`py2app`](https://py2app.readthedocs.io/en/latest/), follow these steps. 
+This build configuration is optimized for **Intel (x86_64)** architecture.
+
+### Build Commands
+
+Run the following commands in your terminal:
+
+```bash
+# Set environment variable to skip internal packaging if necessary
+export PY2APP_SKIP_PACKAGING=1
+
+# Build the .app for x86_64 architecture
+python3.12 setup.py py2app --arch=x86_64

@@ -59,3 +59,9 @@ export PY2APP_SKIP_PACKAGING=1
 
 # Build the .app for x86_64 architecture
 python3.12 setup.py py2app --arch=x86_64
+```
+
+> [!IMPORTANT]
+> ### For macOS Users
+> Please **move GmsOne.app to your `/Applications` folder** before launching it for the first time. 
+> Running the app directly from a downloaded folder may trigger macOS security features (App Translocation), which can prevent your settings from being saved correctly.

@@ -13,6 +13,12 @@ GmsOne requires the following environment to run from source:
 * **Python 3.8 or higher**
 * [**customtkinter**](https://customtkinter.tomschimansky.com/) library
 
+> [!CAUTION]
+> ### Supported GAMESS Versions
+> This application is specifically optimized for **GAMESS version 30Jun2020R1**.
+> 
+> Older versions (e.g., **30Sep2018R3-Lion** or earlier) are **not supported** due to differences in path handling within the `rungms` script, which may cause execution errors (e.g., path modifier errors).
+
 ### Installation
 
 1.  **Check your Python version**
@@ -31,12 +37,6 @@ GmsOne requires the following environment to run from source:
     ```bash
     python3 GmsOne.py
     ```
-> [!CAUTION]
-> ### Supported GAMESS Versions
-> This application is specifically optimized for **GAMESS version 30Jun2020R1**.
-> 
-> Older versions (e.g., **30Sep2018R3-Lion** or earlier) are **not supported** due to differences in path handling within the `rungms` script, which may cause execution errors (e.g., path modifier errors).
-
 ### Tips for Path Settings
 To ensure stable execution, please follow these rules in the **SETTINGS** window:
 - Use **Absolute Paths** (starting with `/Users/...`).

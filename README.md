@@ -30,7 +30,7 @@ GmsOne requires the following environment to run from source:
 2.  **Install the required package**
     Install `customtkinter` via pip:
     ```bash
-    pip install customtkinter
+    pip3 install customtkinter
     ```
 
 3.  **Run the application**
